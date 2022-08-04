@@ -1,8 +1,5 @@
 <!-- wp:group {"className":"spotlight_title_with_side_by_side_bio_page"} -->
-<div class="wp-block-group spotlight_title_with_side_by_side_bio_page"><!-- wp:heading {"level":1,"fontSize":"large"} -->
-<h1 class="has-large-font-size">Spotlight Title (i.e. Meet Asmae El-Bouhali)</h1>
-<!-- /wp:heading -->
-
+<div class="wp-block-group spotlight_title_with_side_by_side_bio_page">
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%">
