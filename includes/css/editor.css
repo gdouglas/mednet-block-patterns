@@ -45,6 +45,7 @@
   content: "\f06a";
 }
 p,
-.rich-text {
+.rich-text,
+p {
   white-space: normal !important;
 }
