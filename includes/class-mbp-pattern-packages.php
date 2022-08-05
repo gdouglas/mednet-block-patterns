@@ -135,7 +135,7 @@ class MBP_Pattern_Packages {
 				'title'         => __( 'Quick Link List', 'mednet-block-patterns' ),
 				'description'   => __( 'Quick Link List', 'mbp-block-patterns' ),
 				'categories'    => array( 'MedNet_Components' ),
-				'keywords'      => array( 'quicklink', 'list' ),
+				'keywords'      => array( 'quicklinks', 'list' ),
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/quick_link_list.php',
 			),

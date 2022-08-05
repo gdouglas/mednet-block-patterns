@@ -118,61 +118,46 @@
 
         <!-- wp:column {"width":"33.33%"} -->
         <div class="wp-block-column" style="flex-basis: 33.33%">
-            <!-- wp:group -->
+            <!-- wp:group {"className":"quicklinks"} -->
             <div class="wp-block-group">
-                <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","fontStyle":"normal","fontWeight":"600","letterSpacing":"1.4px","textTransform":"uppercase"},"color":{"text":"#002145"}}} -->
-                <p
-                    class="has-text-color"
-                    style="
-                        color: #002145;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        letter-spacing: 1.4px;
-                    "
-                >
-                    QUICKLINKS
-                </p>
-                <!-- /wp:paragraph -->
+                <!-- wp:heading {"level":3,"className":"quicklinks"} -->
+                <h3 class="quicklinks">Quicklinks</h3>
+                <!-- /wp:heading -->
 
-                <!-- wp:list {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#002145"}},"className":"quicklinks_list"} -->
-                <ul
-                    class="quicklinks_list has-text-color"
-                    style="color: #002145; font-size: 16px"
-                >
+                <!-- wp:list {"className":"quicklinks_list"} -->
+                <ul class="quicklinks_list">
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >Entrada</a
                         >
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >Workday</a
                         >
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >TTPS</a
                         >
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >Book a Room</a
                         >
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >Contact List</a
                         >
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >Communications Office</a
                         >
                     </li>
                     <li>
-                        <a href="/" target="_blank" rel="noreferrer noopener"
+                        <a rel="noreferrer noopener" href="/" target="_blank"
                             >IT Helpdesk</a
                         >
                     </li>
