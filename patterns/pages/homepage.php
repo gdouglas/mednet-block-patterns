@@ -43,7 +43,7 @@
 
         <!-- wp:column {"width":"33.33%"} -->
         <div class="wp-block-column" style="flex-basis: 33.33%">
-            <!-- wp:group {"className":"quicklinks"} -->
+            <!-- wp:group -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":3,"className":"quicklinks"} -->
                 <h3 class="quicklinks">Quicklinks</h3>
