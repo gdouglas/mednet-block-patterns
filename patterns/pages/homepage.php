@@ -7,7 +7,7 @@
             class="has-text-color"
             style="color: #0055b7; font-size: 16px; letter-spacing: 0px"
         >
-            <span class="closebtn" onclick="closeAlert()">&times;</span
+            <span class="closebtn" onclick="closeAlert()">×</span
             ><i class="icon-exclamation-sign icon-white"></i
             ><strong>Alert Banner</strong>: For your December 31 pay, the
             deadline to enter and submit your time in Workday is December 21.
@@ -17,108 +17,33 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:heading {"style":{"typography":{"fontSize":"54px","letterSpacing":"-0.54px"},"color":{"text":"#002145"}}} -->
-    <h2
-        class="has-text-color"
-        style="color: #002145; font-size: 54px; letter-spacing: -0.54px"
-    >
-        Welcome to MedNet
-    </h2>
+    <!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"54px","letterSpacing":"-0.54px"},"color":{"text":"#002145"}}} -->
+    <h1 class="has-text-color" style="color:#002145;font-size:54px;letter-spacing:-0.54px">
+            Welcome to MedNet
+        </h1>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
     <p style="font-size: 18px">
-        Updates and resources for faculty and staff at UBC&rsquo;s Faculty of
-        Medicine
+        Updates and resources for faculty and staff at UBC’s Faculty of Medicine
     </p>
     <!-- /wp:paragraph -->
 
+    <!-- wp:spacer {"height":"55px"} -->
+    <div style="height: 55px" aria-hidden="true" class="wp-block-spacer"></div>
+    <!-- /wp:spacer -->
+
     <!-- wp:columns -->
     <div class="wp-block-columns">
-        <!-- wp:column {"width":"66.66%"} -->
-        <div class="wp-block-column" style="flex-basis: 66.66%">
-            <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"color":{"text":"#002145"}}} -->
-            <p class="has-text-color" style="color: #002145; font-size: 18px">
-                WHAT&rsquo;S NEW
-            </p>
-            <!-- /wp:paragraph -->
-
-            <!-- wp:columns {"className":"announcement_block"} -->
-            <div class="wp-block-columns announcement_block">
-                <!-- wp:column {"width":"50%"} -->
-                <div class="wp-block-column" style="flex-basis: 50%">
-                    <!-- wp:query {"queryId":20,"query":{"perPage":"1","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false}} -->
-                    <div class="wp-block-query">
-                        <!-- wp:post-template -->
-                        <!-- wp:post-featured-image {"isLink":true,"width":"","height":"","align":"wide"} /-->
-
-                        <!-- wp:post-title {"isLink":true,"style":{"color":{"text":"#0055b7"}}} /-->
-
-                        <!-- wp:post-excerpt {"moreText":"\u003cbr\u003e"} /-->
-                        <!-- /wp:post-template -->
-                    </div>
-                    <!-- /wp:query -->
-                </div>
-                <!-- /wp:column -->
-
-                <!-- wp:column {"width":"50%"} -->
-                <div class="wp-block-column" style="flex-basis: 50%">
-                    <!-- wp:query {"queryId":30,"query":{"perPage":"4","pages":0,"offset":"1","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[5]}}} -->
-                    <div class="wp-block-query">
-                        <!-- wp:post-template -->
-                        <!-- wp:columns {"verticalAlignment":"center"} -->
-                        <div
-                            class="wp-block-columns are-vertically-aligned-center"
-                        >
-                            <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-                            <div
-                                class="wp-block-column is-vertically-aligned-center"
-                                style="flex-basis: 50%"
-                            >
-                                <!-- wp:post-featured-image {"isLink":true} /-->
-                            </div>
-                            <!-- /wp:column -->
-
-                            <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-                            <div
-                                class="wp-block-column is-vertically-aligned-center"
-                                style="flex-basis: 50%"
-                            >
-                                <!-- wp:post-title {"level":1,"isLink":true,"style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"100"},"color":{"text":"#0055b7"}}} /-->
-                            </div>
-                            <!-- /wp:column -->
-                        </div>
-                        <!-- /wp:columns -->
-                        <!-- /wp:post-template -->
-                    </div>
-                    <!-- /wp:query -->
-                </div>
-                <!-- /wp:column -->
-            </div>
-            <!-- /wp:columns -->
-
-            <!-- wp:buttons {"className":"announcement_block_btn"} -->
-            <div class="wp-block-buttons announcement_block_btn">
-                <!-- wp:button {"style":{"border":{"radius":"0px"},"typography":{"fontSize":"16px"},"color":{"background":"#0055b7"}},"className":"is-style-fill"} -->
-                <div
-                    class="wp-block-button has-custom-font-size is-style-fill"
-                    style="font-size: 16px"
-                >
-                    <a
-                        class="wp-block-button__link has-background"
-                        style="border-radius: 0px; background-color: #0055b7"
-                        >See What&rsquo;s New</a
-                    >
-                </div>
-                <!-- /wp:button -->
-            </div>
-            <!-- /wp:buttons -->
+        <!-- wp:column {"width":"66.66%", "className":"fill-container"} -->
+        <div class="wp-block-column fill-container" style="flex-basis: 66.66%">
+            <?php include MBP_PATTERNS_FOLDER . 'components/announcements_block.php'?>
         </div>
         <!-- /wp:column -->
 
         <!-- wp:column {"width":"33.33%"} -->
         <div class="wp-block-column" style="flex-basis: 33.33%">
-            <!-- wp:group {"className":"quicklinks"} -->
+            <!-- wp:group -->
             <div class="wp-block-group">
                 <!-- wp:heading {"level":3,"className":"quicklinks"} -->
                 <h3 class="quicklinks">Quicklinks</h3>
@@ -163,6 +88,14 @@
                     </li>
                 </ul>
                 <!-- /wp:list -->
+
+                <!-- wp:spacer {"height":"48px"} -->
+                <div
+                    style="height: 48px"
+                    aria-hidden="true"
+                    class="wp-block-spacer"
+                ></div>
+                <!-- /wp:spacer -->
             </div>
             <!-- /wp:group -->
 
@@ -173,10 +106,8 @@
             >
                 <!-- wp:group -->
                 <div class="wp-block-group">
-                    <!-- wp:image {"id":484,"width":125,"height":178,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-                    <figure
-                        class="wp-block-image size-full is-resized is-style-default"
-                    >
+                    <!-- wp:image {"id":484,"width":125,"height":178,"sizeSlug":"full","linkDestination":"none"} -->
+                    <figure class="wp-block-image size-full is-resized">
                         <img
                             src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/Icon_Home-FeaturedResource@2x.png"
                             alt=""
@@ -187,20 +118,14 @@
                     </figure>
                     <!-- /wp:image -->
 
-                    <!-- wp:paragraph {"style":{"typography":{"fontSize":"14px","letterSpacing":"1.4px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#002145"}}} -->
-                    <p
+                    <!-- wp:heading {"level":3,"style":{"color":{"text":"#002145"},"typography":{"fontSize":"0.875rem"}}} -->
+                    <h3
                         class="has-text-color"
-                        style="
-                            color: #002145;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 600;
-                            letter-spacing: 1.4px;
-                        "
+                        style="color: #002145; font-size: 0.875rem"
                     >
                         FEATURED RESOURCE
-                    </p>
-                    <!-- /wp:paragraph -->
+                    </h3>
+                    <!-- /wp:heading -->
                 </div>
                 <!-- /wp:group -->
 
@@ -248,131 +173,8 @@
         <!-- /wp:column -->
     </div>
     <!-- /wp:columns -->
-
-    <!-- wp:group {"backgroundColor":"white","className":"events_list"} -->
-    <div
-        class="wp-block-group events_list has-white-background-color has-background"
-    >
-        <!-- wp:group {"style":{"color":{"background":"#002145"}}} -->
-        <div
-            class="wp-block-group has-background"
-            style="background-color: #002145"
-        >
-            <!-- wp:columns {"style":{"color":{"background":"#002145"}},"textColor":"white"} -->
-            <div
-                class="wp-block-columns has-white-color has-text-color has-background"
-                style="background-color: #002145"
-            >
-                <!-- wp:column {"width":"33.33%"} -->
-                <div class="wp-block-column" style="flex-basis: 33.33%">
-                    <!-- wp:image {"id":481,"width":58,"height":59,"sizeSlug":"full","linkDestination":"none","className":"is-style-default"} -->
-                    <figure
-                        class="wp-block-image size-full is-resized is-style-default"
-                    >
-                        <img
-                            src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Home_Icon-Events.svg"
-                            alt=""
-                            class="wp-image-481"
-                            width="58"
-                            height="59"
-                        />
-                    </figure>
-                    <!-- /wp:image -->
-
-                    <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","letterSpacing":"0.9px","textTransform":"uppercase","fontStyle":"normal","fontWeight":"600"}},"textColor":"white"} -->
-                    <p
-                        class="has-white-color has-text-color"
-                        style="
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 600;
-                            text-transform: uppercase;
-                            letter-spacing: 0.9px;
-                        "
-                    >
-                        EVENTS
-                    </p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}},"textColor":"white"} -->
-                    <p
-                        class="has-white-color has-text-color"
-                        style="font-size: 16px"
-                    >
-                        Lorem ipsum dolor sit amet, elit, do tempor incididunt
-                        ut ero labore et dolore aliqua or
-                        <a href="/">submit an event</a>.
-                    </p>
-                    <!-- /wp:paragraph -->
-                </div>
-                <!-- /wp:column -->
-
-                <!-- wp:column {"width":"66.66%"} -->
-                <div class="wp-block-column" style="flex-basis: 66.66%">
-                    <!-- wp:paragraph {"textColor":"white","className":"event_title"} -->
-                    <p class="event_title has-white-color has-text-color">
-                        <a href="/" target="_blank" rel="noreferrer noopener"
-                            >Research horizons: what now, what next? An evening
-                            with UBC&rsquo;s newest University Killam
-                            Professors</a
-                        >
-                    </p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:paragraph {"className":"event_date"} -->
-                    <p class="event_date">May 2, 2022</p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:paragraph {"textColor":"white","className":"event_title"} -->
-                    <p class="event_title has-white-color has-text-color">
-                        <a href="/" target="_blank" rel="noreferrer noopener"
-                            >Faculty of Medicine Translational Medicine
-                            Rounds</a
-                        >
-                    </p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:paragraph {"className":"event_date"} -->
-                    <p class="event_date">May 3, 2022</p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:paragraph {"textColor":"white","className":"event_title"} -->
-                    <p class="event_title has-white-color has-text-color">
-                        <a href="/" target="_blank" rel="noreferrer noopener"
-                            >Healthcare funding policies for integrating care
-                            and improving health outcomes</a
-                        >
-                    </p>
-                    <!-- /wp:paragraph -->
-
-                    <!-- wp:paragraph {"className":"event_date"} -->
-                    <p class="event_date">May 3, 2022</p>
-                    <!-- /wp:paragraph -->
-                </div>
-                <!-- /wp:column -->
-            </div>
-            <!-- /wp:columns -->
-
-            <!-- wp:buttons -->
-            <div class="wp-block-buttons">
-                <!-- wp:button {"style":{"border":{"radius":"0px"},"color":{"background":"#0055b7"}},"className":"is-style-fill"} -->
-                <div class="wp-block-button is-style-fill">
-                    <a
-                        class="wp-block-button__link has-background"
-                        href="/"
-                        style="border-radius: 0px; background-color: #0055b7"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >See All Events</a
-                    >
-                </div>
-                <!-- /wp:button -->
-            </div>
-            <!-- /wp:buttons -->
-        </div>
-        <!-- /wp:group -->
-    </div>
-    <!-- /wp:group -->
+    
+    <?php include MBP_PATTERNS_FOLDER . 'components/events_list.php'?>
 
     <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"spotlight_cards"} -->
     <div
@@ -484,7 +286,7 @@
                     class="has-text-color"
                     style="color: #002145; font-size: 16px"
                 >
-                    Learn more about the Faculty&rsquo;s commitment and actions
+                    Learn more about the Faculty’s commitment and actions
                     towards creating respectful and inclusive learning and work
                     environments
                 </p>
@@ -533,7 +335,7 @@
                     class="has-text-color"
                     style="color: #002145; font-size: 16px"
                 >
-                    Learn more about the Faculty&rsquo;s commitment and actions
+                    Learn more about the Faculty’s commitment and actions
                     towards creating respectful and inclusive learning and work
                     environments
                 </p>
@@ -645,7 +447,7 @@
                     class="has-text-color"
                     style="color: #002145; font-size: 16px"
                 >
-                    Learn more about the Faculty&rsquo;s commitment and actions
+                    Learn more about the Faculty’s commitment and actions
                     towards creating respectful and inclusive learning and work
                     environments
                 </p>

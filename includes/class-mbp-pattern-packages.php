@@ -159,6 +159,16 @@ class MBP_Pattern_Packages {
 				'viewportWidth' => 1200,
 				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/events_list.php',
 			),
+			'mednet-block-patterns/events_list_item'            => array(
+				'slug'          => 'events_list_item',
+				'pattern_class' => 'mbp-pattern-events_list_item',
+				'title'         => __( 'Events List Item', 'mednet-block-patterns' ),
+				'description'   => __( 'Events List Item', 'mbp-block-patterns' ),
+				'categories'    => array( 'MedNet_Components' ),
+				'keywords'      => array( 'text', 'events', 'list item', 'date', 'title' ),
+				'viewportWidth' => 1200,
+				'file_content'  => MBP_PLUGIN_DIR . 'patterns/components/event_list_item.php',
+			),
 			'mednet-block-patterns/spotlight_cards'        => array(
 				'slug'          => 'spotlight_cards',
 				'pattern_class' => 'mbp-pattern-spotlight_cards',

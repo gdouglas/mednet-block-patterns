@@ -44,6 +44,7 @@
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
-p {
+p,
+.rich-text {
   white-space: normal !important;
 }
