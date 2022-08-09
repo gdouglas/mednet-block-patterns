@@ -268,41 +268,42 @@ h2 > a {
 
 /* Content Card */
 
-.content_card {
+.content-card {
   width: 100%;
   max-width: 560px;
 }
 
-.content_card > div .wp-block-image {
+.content-card-image {
   background-color: var(--blue_2);
   isolation: isolate;
   aspect-ratio: 16/9;
-}
-
-.content_card > div .wp-block-image:hover {
-  transform: translate(-10px);
-}
-
-.content_card > div .wp-block-image img {
   width: 100%;
   object-fit: cover;
   aspect-ratio: 16/9;
 }
-
-.content_card img:hover {
+#content .content-card-image .has-background-dim {
+  transition: all ease .2s;
+}
+#content .content-card-image:hover .has-background-dim{
+  /* transform: translate(-10px); */
   opacity: 0.65;
 }
-
-.content_card > div > p:nth-child(2) {
+.content-card .wp-block-cover__inner-container {
+  height: 100%;
+  width: 100%;
+  margin: -1rem;
+  padding: 1rem;
+}
+.content-card-title {
   padding: 10px 0 8px;
 }
 
-.content_card > div > p:nth-child(2) > a {
+.content-card-title > a {
   text-decoration: none;
   color: var(--blue_1);
 }
 
-.content_card > div > p:nth-child(2) > a:hover {
+.content-card-title > a:hover {
   text-decoration: underline;
 }
 
@@ -329,12 +330,12 @@ h2 > a {
   object-fit: cover;
 }
 
-.content_card_with_overlay > div > div > div > .wp-block-image:hover {
+.content_card_with_overlay .wp-block-image:hover {
   mix-blend-mode: overlay;
 }
 
-.content_card_with_overlay > div > div > div > .wp-block-image > img,
-.content_card_with_overlay > div > div > div > .overlay_image > img {
+.content_card_with_overlay .wp-block-image > img,
+.content_card_with_overlay .overlay_image > img {
   width: 560px !important;
   height: 315px !important;
 }
@@ -1286,7 +1287,7 @@ h2 > a {
   margin-top: 0;
 }
 
-.homepage > div > div:nth-child(8) > div .content_card {
+.homepage > div > div:nth-child(8) > div .content-card{
   margin: 0 auto;
 }
 
@@ -1953,12 +1954,12 @@ h2 > a {
     > img {
     min-height: initial;
   }
-  .content_card > div > p:nth-child(2) {
+  .content-card> div > p:nth-child(2) {
     font-size: 20px !important;
     line-height: 22px;
     letter-spacing: -0.1px !important;
   }
-  .content_card > div > p:nth-child(3) {
+  .content-card> div > p:nth-child(3) {
     font-size: 14px !important;
   }
   .blue_feature_blocks {
@@ -2132,7 +2133,7 @@ h2 > a {
   .pathways_feature_block > div > div > div {
     max-width: none;
   }
-  .content_card {
+  .content-card{
     max-width: none;
   }
   .table_option_1 table {

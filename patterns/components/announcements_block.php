@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"announcements-block full-bleed"} -->
-<div class="wp-block-group announcements-block full-bleed">
+<!-- wp:group {"className":"announcements-block"} -->
+<div class="wp-block-group announcements-block">
     <!-- wp:heading {"style":{"color":{"text":"#002145"},"typography":{"fontSize":"18px"}}} -->
     <h2 class="has-text-color" style="color: #002145; font-size: 18px">
         WHAT’S NEW

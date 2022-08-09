@@ -16,11 +16,14 @@
 .home.full-width .full-width-container .expand {
 	max-width: none;
 }
-.home.full-width h1,
 .home.full-width .homepage .wp-block-columns,
 .home.full-width .homepage .wp-block-group {
 	max-width: 1170px;
 	margin: 0 auto;
+}
+.home.full-width h1 {
+	margin-left: auto;
+	margin-right: auto;
 }
 .home.full-width .full-width-container,
 .home #container,

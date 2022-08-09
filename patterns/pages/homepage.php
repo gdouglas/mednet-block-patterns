@@ -17,22 +17,23 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"54px","letterSpacing":"-0.54px"},"color":{"text":"#002145"}}} -->
-    <h1 class="has-text-color" style="color:#002145;font-size:54px;letter-spacing:-0.54px">
+<!-- wp:group -->
+<div class="wp-block-group"><!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"54px","letterSpacing":"-0.54px"},"color":{"text":"#002145"}}} -->
+<h1 class="has-text-color" style="color:#002145;font-size:54px;letter-spacing:-0.54px">
             Welcome to MedNet
         </h1>
-    <!-- /wp:heading -->
+<!-- /wp:heading -->
 
-    <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
-    <p style="font-size: 18px">
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
+<p style="font-size:18px">
         Updates and resources for faculty and staff at UBC’s Faculty of Medicine
     </p>
-    <!-- /wp:paragraph -->
+<!-- /wp:paragraph -->
 
-    <!-- wp:spacer {"height":"55px"} -->
-    <div style="height: 55px" aria-hidden="true" class="wp-block-spacer"></div>
-    <!-- /wp:spacer -->
-
+<!-- wp:spacer {"height":"55px"} -->
+<div style="height:55px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:group -->
     <!-- wp:columns -->
     <div class="wp-block-columns">
         <!-- wp:column {"width":"66.66%", "className":"fill-container"} -->
@@ -175,173 +176,19 @@
     <!-- /wp:columns -->
     
     <?php include MBP_PATTERNS_FOLDER . 'components/events_list.php'?>
-
-    <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"spotlight_cards full-bleed"} -->
-    <div
-        class="wp-block-group spotlight_cards has-background full-bleed"
-        style="background-color: #f2f2f2"
-    >
-        <!-- wp:columns -->
-        <div class="wp-block-columns">
-            <!-- wp:column {"width":"33.33%"} -->
-            <div class="wp-block-column" style="flex-basis: 33.33%">
-                <!-- wp:image {"sizeSlug":"large","className":"is-style-default"} -->
-                <figure class="wp-block-image size-large is-style-default">
-                    <img
-                        src="/wp-content/plugins/mednet-block-patterns/includes/assets/images/svgs/Home_Icon-Spotlight.svg"
-                        alt=""
-                    />
-                </figure>
-                <!-- /wp:image -->
-
-                <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","letterSpacing":"0.9px","fontStyle":"normal","fontWeight":"600","textTransform":"uppercase"},"color":{"text":"#002145"}}} -->
-                <p
-                    class="has-text-color"
-                    style="
-                        color: #002145;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        letter-spacing: 0.9px;
-                    "
-                >
-                    FACULTY &amp; STAFF SPOTLIGHT
-                </p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} -->
-                <p style="font-size: 16px">
-                    Lorem ipsum sit amet, elit, do ut ero labore or one-on-one
-                    lorem ipsum dolor sit amet staff spotlight.
-                </p>
-                <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:column -->
-
-            <!-- wp:column {"width":"66.66%"} -->
-            <div class="wp-block-column" style="flex-basis: 66.66%">
-                <!-- wp:query {"queryId":17,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[10]}},"displayLayout":{"type":"flex","columns":3}} -->
-                <div class="wp-block-query">
-                    <!-- wp:post-template -->
-                    <!-- wp:post-featured-image {"isLink":true,"align":"wide"} /-->
-
-                    <!-- wp:group -->
-                    <div class="wp-block-group">
-                        <!-- wp:post-terms {"term":"post_tag","style":{"typography":{"fontSize":"14px"},"color":{"text":"#002145"}}} /-->
-
-                        <!-- wp:post-title {"isLink":true,"linkTarget":"_blank","style":{"typography":{"fontSize":"28px","letterSpacing":"-0.14px","fontStyle":"normal","fontWeight":"400"}}} /-->
-
-                        <!-- wp:post-excerpt {"style":{"typography":{"fontSize":"16px"}}} /-->
-                    </div>
-                    <!-- /wp:group -->
-                    <!-- /wp:post-template -->
-                </div>
-                <!-- /wp:query -->
-            </div>
-            <!-- /wp:column -->
-        </div>
-        <!-- /wp:columns -->
-    </div>
-    <!-- /wp:group -->
+    <?php include MBP_PATTERNS_FOLDER . 'components/spotlight_cards.php'?>
 
     <!-- wp:columns -->
     <div class="wp-block-columns">
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"className":"content_card"} -->
-            <div class="wp-block-group content_card">
-                <!-- wp:image {"id":474,"sizeSlug":"full","linkDestination":"custom","className":"is-style-default"} -->
-                <figure class="wp-block-image size-full is-style-default">
-                    <img
-                        src="https://via.placeholder.com/150/002145/ffffff/"
-                        alt=""
-                        class="wp-image-474"
-                    />
-                </figure>
-                <!-- /wp:image -->
-
-                <!-- wp:paragraph {"style":{"typography":{"fontSize":"28px","letterSpacing":"-0.14px"},"color":{"text":"#0055b7"}}} -->
-                <p
-                    class="has-text-color"
-                    style="
-                        color: #0055b7;
-                        font-size: 28px;
-                        letter-spacing: -0.14px;
-                    "
-                >
-                    <a
-                        href="https://mednet.med.ubc.ca/"
-                        data-type="URL"
-                        data-id="https://mednet.med.ubc.ca/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >Transformation of Culture</a
-                    >
-                </p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"style":{"color":{"text":"#002145"},"typography":{"fontSize":"16px"}}} -->
-                <p
-                    class="has-text-color"
-                    style="color: #002145; font-size: 16px"
-                >
-                    Learn more about the Faculty’s commitment and actions
-                    towards creating respectful and inclusive learning and work
-                    environments
-                </p>
-                <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+            <?php include MBP_PATTERNS_FOLDER . 'components/content_card.php'?>
         </div>
         <!-- /wp:column -->
 
         <!-- wp:column -->
         <div class="wp-block-column">
-            <!-- wp:group {"className":"content_card"} -->
-            <div class="wp-block-group content_card">
-                <!-- wp:image {"id":474,"sizeSlug":"full","linkDestination":"custom","className":"is-style-default"} -->
-                <figure class="wp-block-image size-full is-style-default">
-                    <img
-                        src="https://via.placeholder.com/150/002145/ffffff/"
-                        alt=""
-                        class="wp-image-474"
-                    />
-                </figure>
-                <!-- /wp:image -->
-
-                <!-- wp:paragraph {"style":{"typography":{"fontSize":"28px","letterSpacing":"-0.14px"},"color":{"text":"#0055b7"}}} -->
-                <p
-                    class="has-text-color"
-                    style="
-                        color: #0055b7;
-                        font-size: 28px;
-                        letter-spacing: -0.14px;
-                    "
-                >
-                    <a
-                        href="https://mednet.med.ubc.ca/"
-                        data-type="URL"
-                        data-id="https://mednet.med.ubc.ca/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        >Transformation of Culture</a
-                    >
-                </p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:paragraph {"style":{"color":{"text":"#002145"},"typography":{"fontSize":"16px"}}} -->
-                <p
-                    class="has-text-color"
-                    style="color: #002145; font-size: 16px"
-                >
-                    Learn more about the Faculty’s commitment and actions
-                    towards creating respectful and inclusive learning and work
-                    environments
-                </p>
-                <!-- /wp:paragraph -->
-            </div>
-            <!-- /wp:group -->
+            <?php include MBP_PATTERNS_FOLDER . 'components/content_card.php'?>
         </div>
         <!-- /wp:column -->
     </div>
