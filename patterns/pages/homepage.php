@@ -176,9 +176,9 @@
     
     <?php include MBP_PATTERNS_FOLDER . 'components/events_list.php'?>
 
-    <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"spotlight_cards"} -->
+    <!-- wp:group {"style":{"color":{"background":"#f2f2f2"}},"className":"spotlight_cards full-bleed"} -->
     <div
-        class="wp-block-group spotlight_cards has-background"
+        class="wp-block-group spotlight_cards has-background full-bleed"
         style="background-color: #f2f2f2"
     >
         <!-- wp:columns -->
