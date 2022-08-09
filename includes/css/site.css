@@ -40,11 +40,11 @@
 	padding-bottom: 5.5rem;
 }
 .home #container .homepage .full-bleed {
-	margin-top: 1rem;
+	margin-top: 6rem;
 }
 .home #container .homepage .full-bleed + .full-bleed {
 	margin-top: 0rem;
-	margin-bottom:1rem;
+	margin-bottom:6rem;
 }
 .full-width {
 	background: #FFF;
@@ -80,7 +80,16 @@ h2 {
 .has-white-color * {
 	color: inherit;
 }
-
+a {
+	color: var(--blue_1);
+	text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+	color: var(--blue_1);
+	text-decoration: underline;
+}
 /* Utilities */
 .fill-container {
 	display: flex;
@@ -90,4 +99,7 @@ h2 {
 }
 .no-bottom-space {
 	margin-bottom: 0;
+}
+.no-margin {
+	margin: 0;
 }
