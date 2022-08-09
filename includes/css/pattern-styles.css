@@ -13,7 +13,6 @@
 .alert-banner * {
   color: inherit;
 }
-.alert-banner .wp-block-columns {}
 .alert-banner p {
   margin: 0;
 }
@@ -51,9 +50,6 @@
 }
 
 /* Announcements Block */
-.announcements-block {
-  
-}
 div.announcement_block{
   gap: 1rem;
   margin-top: 26px;
@@ -266,11 +262,6 @@ h2 > a {
 }
 
 /* Content Card */
-
-.content-card {
-
-}
-
 .content-card-image {
   display: flex;
   padding: 0;
