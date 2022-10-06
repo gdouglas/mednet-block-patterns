@@ -43,7 +43,7 @@ class MBP_Scripts {
 	 * @return void
 	 */
 	public function set_filters() {
-		add_filter( 'should_load_remote_block_patterns', '__return_false' ); //don't use the pattern catalogue.
+		add_filter( 'should_load_remote_block_patterns', '__return_false' ); // don't use the pattern catalogue.
 	}
 	/**
 	 * Remove or add menu items in the editor
@@ -144,6 +144,7 @@ class MBP_Scripts {
 	public function remove_core_patterns() {
 		remove_theme_support( 'core-block-patterns' );
 	}
+
 	/**
 	 * Add options for giving the user more editing control
 	 *

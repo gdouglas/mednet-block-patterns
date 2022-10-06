@@ -21,8 +21,8 @@
 }
 
 /* quotes */
-.is-style-blue-quote,
-.is-style-blue-quote p {
+.wp-block-quote,
+.wp-block-quote p {
 	border: none;
 	color: var(--blue_1);
 	font-size: 1.625rem;
@@ -37,12 +37,12 @@
 	font-weight: 400;
 }
 
-.is-style-blue-quote cite::before {
+.wp-block-quote cite::before {
 	content: "— ";
 	display: inline-block;
 }
 
-.is-style-blue-quote cite {
+.wp-block-quote cite {
 	font-size: 1.125rem;
 }
 

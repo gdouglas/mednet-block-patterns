@@ -61,7 +61,7 @@ p {
 	color: #1e1e1e;
 }
 
-a.components-external-link::after {
+a[target="_blank"].components-external-link::after {
 	content: none;
 }
 
