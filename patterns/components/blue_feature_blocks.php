@@ -1,6 +1,6 @@
 <!-- wp:group -->
-<div class="wp-block-group"><!-- wp:columns {"textColor":"white","className":"blue_feature_blocks"} -->
-<div class="wp-block-columns blue_feature_blocks has-white-color has-text-color"><!-- wp:column {"width":"33.33%","style":{"color":{"background":"#002145"}},"textColor":"white"} -->
+<div class="wp-block-group"><!-- wp:columns {"textColor":"white","className":"blue-feature-blocks"} -->
+<div class="wp-block-columns blue-feature-blocks has-white-color has-text-color"><!-- wp:column {"width":"33.33%","style":{"color":{"background":"#002145"}},"textColor":"white"} -->
 <div class="wp-block-column has-white-color has-text-color has-background" style="background-color:#002145;flex-basis:33.33%"><!-- wp:heading {"level":3,"textColor":"white"} -->
 <h3 class="has-white-color has-text-color">Calendar</h3>
 <!-- /wp:heading -->

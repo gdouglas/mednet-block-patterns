@@ -59,7 +59,7 @@
                 class="wp-block-column event-list-column"
                 style="flex-basis: 66.66%"
             >
-			<?php include 'event_list_item.php'; ?>
+			<?php require 'event_list_item.php'; ?>
                 <!-- wp:paragraph -->
                 <p></p>
                 <!-- /wp:paragraph -->
