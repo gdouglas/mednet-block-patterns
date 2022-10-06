@@ -160,6 +160,6 @@
 	<!-- /wp:column -->
   </div>
   <!-- /wp:columns -->
-	<?php require MBP_PATTERNS_FOLDER . 'pages/news-and-honours-section.php'; ?>
+	<?php require MBP_PATTERNS_FOLDER . 'pages/news_and_honours_section.php'; ?>
 </div>
 <!-- /wp:group -->

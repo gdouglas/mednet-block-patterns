@@ -58,13 +58,6 @@ h4 {
 	font-size: 1rem;
 }
 
-p,
-li {
-	max-width: none;
-	color: unset;
-	line-height: 1.5;
-}
-
 a {
 	color: var(--blue_1);
 	text-decoration: none;
@@ -302,10 +295,12 @@ a[href$=".xls"]::before,
 a[href$=".xlsx"]::before,
 a[href$=".doc"]::before,
 a[href$=".docx"]::before,
-a[href$=".pdf"]::before {
+a[href$=".pdf"]::before,
+a[href="#top"]::before {
 	margin-right: 0.25em;
 	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
+	/* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+	font: normal normal 400 14px/1 FontAwesome;
 	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
@@ -347,7 +342,7 @@ a[href$=".pdf"]::before {
 	max-width: none;
 }
 
-.two_column_page .wp-block-columns {
+.two-column-page .wp-block-columns {
 	gap: 2.5%;
 }
 
@@ -374,17 +369,8 @@ h3.quicklinks {
 	color: var(--blue_1);
 }
 
-/* @todo blockquote style is not showing in editor */
 a[href="#top"]::before {
 	content: "\f176"; /*fa-long-arrow-up*/
-	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-style: normal !important;
-	margin-right: 0.25em;
 }
 
 .panopto-iframe {

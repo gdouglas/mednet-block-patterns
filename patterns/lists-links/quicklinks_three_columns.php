@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"quicklinks_three_columns"} -->
-<div class="wp-block-group quicklinks_three_columns">
+<!-- wp:group {"className":"quicklinks-three-columns"} -->
+<div class="wp-block-group quicklinks-three-columns">
     <!-- wp:columns -->
     <div class="wp-block-columns">
         <!-- wp:column -->

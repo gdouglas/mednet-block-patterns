@@ -25,13 +25,15 @@
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"placeholder":"Minima facere quae quod inventore dolore aspernatur nostrum officia sit architecto vero magni porro iure consequatur, animi eaque fugit numquam quibusdam voluptatem."} -->
-			<p></p>
-			<!-- /wp:paragraph -->
+            <p></p>
+            <!-- /wp:paragraph -->
         </div>
         <!-- /wp:column -->
 
         <!-- wp:column {"verticalAlignment":"center"} -->
-        <?php require MBP_PATTERNS_FOLDER . 'text/sidebar-block.php'; ?>
+        <div class="wp-block-column is-vertically-aligned-center">
+            <?php require MBP_PATTERNS_FOLDER . 'text/sidebar_block.php'; ?>
+        </div>
         <!-- /wp:column -->
     </div>
     <!-- /wp:columns -->

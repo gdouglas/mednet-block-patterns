@@ -51,7 +51,7 @@ class MBP_Scripts {
 	 * @return void
 	 */
 	public function config_cms_menu() {
-		remove_menu_page('link-manager.php');
+		remove_menu_page( 'link-manager.php' );
 	}
 	/**
 	 * Disable the block editor directory
@@ -120,6 +120,7 @@ class MBP_Scripts {
 			plugins_url( 'js/block-style-variations.js', __FILE__ ),
 			array(
 				'wp-blocks',
+				'wp-dom-ready',
 				'wp-i18n',
 				'wp-element',
 				'wp-editor',

@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"all_announcements_page"} -->
-<div class="wp-block-group all_announcements_page">
+<!-- wp:group {"className":"all-announcements-page"} -->
+<div class="wp-block-group all-announcements-page">
   <!-- wp:paragraph {"fontSize":"medium"} -->
   <p class="has-medium-font-size">content</p>
   <!-- /wp:paragraph -->
@@ -11,9 +11,9 @@
   />
   <!-- /wp:separator -->
 
-  <!-- wp:ubc/tabs {"tabTitles":["All Announcements","Events","Funding \u0026amp; Awards","Appointment","Community"],"className":"all_announcements_tabs_block"} -->
+  <!-- wp:ubc/tabs {"tabTitles":["All Announcements","Events","Funding \u0026amp; Awards","Appointment","Community"],"className":"all-announcements-tabs-block"} -->
   <section
-    class="wp-block-ubc-tabs ubc-accordion-tabs all_announcements_tabs_block"
+    class="wp-block-ubc-tabs ubc-accordion-tabs all-announcements-tabs-block"
     data-selected-tab="0"
   >
     <ul class="ubc-accordion-tabs__tab-list" role="tablist">

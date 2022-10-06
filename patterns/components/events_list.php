@@ -1,6 +1,6 @@
-<!-- wp:group {"style":{"color":{"background":"#002145"}},"textColor":"white","className":"events_list full-bleed"} -->
+<!-- wp:group {"style":{"color":{"background":"#002145"}},"textColor":"white","className":"events-list full-bleed"} -->
 <div
-    class="wp-block-group events_list has-white-color has-text-color has-background full-bleed"
+    class="wp-block-group events-list has-white-color has-text-color has-background full-bleed"
     style="background-color: #002145"
 >
     <!-- wp:group {"className":"events-list-inside"} -->

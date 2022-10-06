@@ -1,5 +1,5 @@
-<!-- wp:group {"className":"pathways_feature_block"} -->
-<div class="wp-block-group pathways_feature_block">
+<!-- wp:group {"className":"pathways-feature-block"} -->
+<div class="wp-block-group pathways-feature-block">
     <!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","textTransform":"uppercase","letterSpacing":"0.9px","fontStyle":"normal","fontWeight":"600"}}} -->
     <p
         style="
