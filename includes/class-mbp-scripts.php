@@ -79,13 +79,8 @@ class MBP_Scripts {
 	 */
 	public function mbp_load_editor_assets() {
 		wp_enqueue_script( 'mbp-editor-script' );
-		wp_enqueue_script( 'mbp-style-variations' );
-
-		wp_enqueue_style( 'mbp-variables-styles' );
-		wp_enqueue_style( 'mbp-site-styles' );
 		wp_enqueue_style( 'mbp-editor-styles' );
-		wp_enqueue_style( 'mbp-pattern-styles' );
-		wp_enqueue_style( 'mbp-variation-styles' );
+		wp_enqueue_script( 'mbp-style-variations' );
 	}
 
 	/**
@@ -96,45 +91,34 @@ class MBP_Scripts {
 	public function mbp_register_assets() {
 		wp_register_script(
 			'mbp-editor-script',
-			plugins_url( 'js/editor.js', __FILE__ ),
+			plugins_url( 'build/editor.js', __DIR__ ),
 			array(
-				'wp-blocks',
-				'wp-i18n',
-				'wp-element',
 				'wp-editor',
-				'wp-plugins',
-				'wp-edit-post',
 			),
-			filemtime( plugin_dir_path( __FILE__ ) . 'js/editor.js' ),
+			filemtime( plugin_dir_path( __DIR__ ) . 'build/editor.js' ),
 			true
 		);
 		wp_register_script(
 			'mbp-front-end-script',
-			plugins_url( 'js/front-end.js', __FILE__ ),
+			plugins_url( 'build/public.js', __DIR__ ),
 			array(),
-			filemtime( plugin_dir_path( __FILE__ ) . 'js/front-end.js' ),
+			filemtime( plugin_dir_path( __DIR__ ) . 'build/public.js' ),
 			true
 		);
 		wp_register_script(
 			'mbp-style-variations',
 			plugins_url( 'js/block-style-variations.js', __FILE__ ),
 			array(
-				'wp-blocks',
-				'wp-dom-ready',
-				'wp-i18n',
-				'wp-element',
 				'wp-editor',
-				'wp-plugins',
-				'wp-edit-post',
 			),
 			filemtime( plugin_dir_path( __FILE__ ) . 'js/block-style-variations.js' ),
 			true
 		);
 		wp_register_style(
 			'mbp-public-styles',
-			plugins_url( 'css/public.css', __FILE__ ),
+			plugins_url( 'build/public.css', __DIR__ ),
 			array(),
-			filemtime( plugin_dir_path( __FILE__ ) . 'css/public.css' )
+			filemtime( plugin_dir_path( __DIR__ ) . 'build/public.css' )
 		);
 	}
 
