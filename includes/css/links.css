@@ -3,11 +3,13 @@
 	[href^="mailto" i],
 	[href*=".xls" i],
 	[href*=".doc" i],
+	[href*=".ppt" i],
 	[href*=".pdf" i],
 	[href="#top" i],
 	[href^="telto"],
 	[href*="panopto" i],
 	[href*="mediasite.audiovisual.ubc.ca" i],
+	[href*="/mediasite/play/" i],
 	[href*=".mp4" i]
 	
 	[target="_blank"]
@@ -46,11 +48,13 @@ a.wp-block-file__button {
 	[href^="mailto" i],
 	[href*=".xls" i],
 	[href*=".doc" i],
+	[href*=".ppt" i],
 	[href*=".pdf" i],
 	[href="#top" i],
 	[href^="telto"],
 	[href*="panopto" i],
 	[href*="mediasite.audiovisual.ubc.ca" i],
+	[href*="/mediasite/play/" i],
 	[href*="https://ubc.zoom.us/rec/" i]
 	[href*=".mp4" i])[target="_blank"] {
 	padding-right: 20px !important;
@@ -60,11 +64,13 @@ a.wp-block-file__button {
 a[href^="mailto" i],
 a[href*=".xls" i],
 a[href*=".doc" i],
+a[href*=".ppt" i],
 a[href*=".pdf" i],
 a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+[href*="/mediasite/play/" i],
 a[href*="https://ubc.zoom.us/rec/" i],
 a[href*=".mp4" i] {
 	position: relative;
@@ -103,11 +109,13 @@ a[target="_blank"]::after {
 a[href^="mailto" i]::before,
 a[href*=".xls" i]::before,
 a[href*=".doc" i]::before,
+a[href*=".ppt" i]::before,
 a[href*=".pdf" i]::before,
 a[href="#top" i]::before,
 a[href^="telto"]::before,
 a[href*="panopto" i]::before,
 a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*="/mediasite/play/" i]::before,
 a[href*="https://ubc.zoom.us/rec/" i]::before,
 a[href*=".mp4" i]::before {
 	margin-right: 0.25em;
@@ -124,11 +132,13 @@ a[href*=".mp4" i]::before {
 li :is(a[href^="mailto" i],
 a[href*=".xls" i],
 a[href*=".doc" i],
+a[href*=".ppt" i],
 a[href*=".pdf" i],
 a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+[href*="/mediasite/play/" i],
 a[href*=".mp4" i])::before {
 	display: inline;
 	position: static;
@@ -138,11 +148,13 @@ a[href*=".mp4" i])::before {
 li :is(a[href^="mailto" i],
 a[href*=".xls" i],
 a[href*=".doc" i],
+a[href*=".ppt" i],
 a[href*=".pdf" i],
 a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+[href*="/mediasite/play/" i],
 a[href*=".mp4" i])::first-letter {
 	padding-left: initial;
 }
@@ -158,6 +170,11 @@ a[href*=".doc" i]::before,
 	content: "\f1c2"; /*fa-word-doc*/
 }
 
+a[href*=".ppt" i]::before,
+:is(h1, h2, h3) a[href*=".ppt" i]::after {
+	content: "\f1c4"; /*fa-file-powerpoint*/
+}
+
 a[href*=".xls" i]::before,
 :is(h1, h2, h3) a[href*=".xls" i]::after {
 	content: "\f1c3";
@@ -170,10 +187,12 @@ a[href^="mailto" i]::before,
 
 a[href*="panopto" i]::before,
 a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*="/mediasite/play/" i]::before,
 a[href*="https://ubc.zoom.us/rec/" i]::before,
 a[href*=".mp4" i]::before,
 :is(h1, h2, h3) a[href*="panopto" i]::after,
 :is(h1, h2, h3) a[href*="mediasite.audiovisual.ubc.ca" i]::after,
+:is(h1, h2, h3) a[href*="/mediasite/play/" i]::after,
 :is(h1, h2, h3) a[href*="https://ubc.zoom.us/rec/" i]::after,
 :is(h1, h2, h3) a[href*=".mp4" i]::after {
 	content: "\f1c8";
@@ -194,11 +213,13 @@ a[href*=".pdf"]::before,
 a[href^="mailto" i]::after,
 a[href*=".xls" i]::after,
 a[href*=".doc" i]::after,
+a[href*=".ppt" i]::after,
 a[href*=".pdf" i]::after,
 a[href="#top" i]::after,
 a[href^="telto"]::after,
 a[href*="panopto" i]::after,
 a[href*="mediasite.audiovisual.ubc.ca" i]::after,
+a[href*="/mediasite/play/" i]::after,
 a[href*="https://ubc.zoom.us/rec/" i]::after,
 a[href*=".mp4" i]::after,
 a.wp-block-file__button::before,
@@ -218,11 +239,13 @@ a.wp-block-file__button::before,
 	a[href^="mailto" i],
 	a[href*=".xls" i],
 	a[href*=".doc" i],
+	a[href*=".ppt" i],
 	a[href*=".pdf" i],
 	a[href="#top" i],
 	a[href^="telto"],
 	a[href*="panopto" i],
 	a[href*="mediasite.audiovisual.ubc.ca" i],
+	[href*="/mediasite/play/" i],
 	a[href*="https://ubc.zoom.us/rec/" i],
 	a[href*=".mp4" i])::after {
 		margin-right: 0.25em;
@@ -335,11 +358,13 @@ a::before {
 :is(a[href^="mailto" i],
 a[href*=".xls" i],
 a[href*=".doc" i],
+a[href*=".ppt" i],
 a[href*=".pdf" i],
 a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+[href*="/mediasite/play/" i],
 a[href*="https://ubc.zoom.us/rec/" i],
 a[href*=".mp4" i]):not(.is-style-no-link-icon)::first-letter {
 	padding-left: 1.25em;
@@ -348,11 +373,13 @@ a[href*=".mp4" i]):not(.is-style-no-link-icon)::first-letter {
 :is(a[href^="mailto" i],
 a[href*=".xls" i],
 a[href*=".doc" i],
+a[href*=".ppt" i],
 a[href*=".pdf" i],
 a[href="#top" i],
 a[href^="telto"],
 a[href*="panopto" i],
 a[href*="mediasite.audiovisual.ubc.ca" i],
+[href*="/mediasite/play/" i],
 a[href*="https://ubc.zoom.us/rec/" i],
 a[href*=".mp4" i])::before {
 	position: absolute;
@@ -378,6 +405,7 @@ a[href^="telto"]::before {
 
 a[href*=".mp4" i]::before,
 a[href*="mediasite.audiovisual.ubc.ca" i]::before,
+a[href*="/mediasite/play/" i]::before,
 a[href*="https://ubc.ca.panopto.com/"]::before,
 a[href*="https://ubc.zoom.us/rec/"]::before {
 	content: "\f1c8" !important;
@@ -426,21 +454,25 @@ a[target="_blank"]:not(.is-style-no-link-icon, :has(img)):hover {
 	a[href^="mailto" i],
 	a[href*=".xls" i],
 	a[href*=".doc" i],
+	a[href*=".ppt" i],
 	a[href*=".pdf" i],
 	a[href="#top" i],
 	a[href^="telto"],
 	a[href*="panopto" i],
 	a[href*="mediasite.audiovisual.ubc.ca" i],
+	a[href*="/mediasite/play/" i],
 	a[href*=".mp4" i]),
 #content a[target="_blank" i]:is(
 	a[href^="mailto" i],
 	a[href*=".xls" i],
 	a[href*=".doc" i],
+	a[href*=".ppt" i],
 	a[href*=".pdf" i],
 	a[href="#top" i],
 	a[href^="telto"],
 	a[href*="panopto" i],
 	a[href*="mediasite.audiovisual.ubc.ca" i],
+	a[href*="/mediasite/play/" i],
 	a[href*=".mp4" i]):hover {
 	padding-right: 0;
 	background-image: none !important;
@@ -478,12 +510,14 @@ a[target="_blank" i]:is(
 	[href$=".xlsx" i],
 	[href$=".doc" i],
 	[href$=".docx" i],
+	[href*=".ppt" i],
 	[href="#top" i],
 	[href$=".pdf" i],
 	[href^="mailto" i])::after,
 .wp-block-cover__inner-container a[target="_blank"],
 a[href*=".pdf"][target="_blank"],
 a[href*="mediasite.audiovisual.ubc.ca" i][target="_blank"],
+a[href*="/mediasite/play/" i][target="_blank"],
 a[href$="mp4"][target="_blank"] {
 	content: none; /*don't have a open in new tab icon on pdf's*/
 	padding-right: unset;
